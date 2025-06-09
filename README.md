@@ -17,7 +17,7 @@ sudo apt install curl
 ## Installation
 
 ```bash
-curl https://raw.githubusercontent.com/jackwolffr/satisdebianserverinstall/refs/heads/main/install.sh | sudo sh
+curl https://raw.githubusercontent.com/jackwolffr/satisdebianserverinstall/refs/heads/main/install.sh | sudo bash
 ```
 
 ## Détails du script
