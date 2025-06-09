@@ -3,7 +3,7 @@
 Script d'installation et de lancement d'un serveur satisfactory sur debian
 
 ## Prérequis
-Passer sudoers
+Si ce n'est pas déjà fait, passez votre utilisteur (xxx à remplacer) en sudoers
 ```bash
 # en root
 echo "xxx ALL=(ALL:ALL) ALL" > /etc/sudoers.d/xxx
