@@ -3,13 +3,13 @@
 Script d'installation et de lancement d'un serveur satisfactory sur debian
 
 ## Prérequis
-passer sudoers
+Passer sudoers
 ```bash
 # en root
 echo "xxx ALL=(ALL:ALL) ALL" > /etc/sudoers.d/xxx
 ```
 
-installer curl
+Installer curl
 ```bash
 sudo apt install curl
 ```
@@ -22,12 +22,18 @@ curl https://raw.githubusercontent.com/jackwolffr/satisdebianserverinstall/refs/
 
 ## Détails du script
 
-- création de l'utilisateur "steam" (mdp steam)
-- création des alias FGdir, FGlog, FGconfdir, FGengine, FGgameusersettings, FGstart, FGstop, FGsavefiles, FGupdate
-- installation de steamcmd 
-- installation du serveur satis en branche stable
-- création et activation du service satisfactory
-- lancement du serveur en daemon
+- Création de l'utilisateur "steam" (mdp steam)
+- Création des alias FGdir, FGlog, FGconfdir, FGengine, FGgameusersettings, FGstart, FGstop, FGsavefiles, FGupdate
+- Installation de steamcmd 
+- Installation du serveur satis en branche stable
+- Création et activation du service satisfactory
+- Lancement du serveur en daemon
+
+Une fois installé, le serveur est lancé silencieusement par son service. Il faut faire un `top` pour le voir dans les process
+
+## Utilisation
+
+Passer sur l'utilisateur steam et utilisez les alias FG* (pour FactoryGame) pour manipuler le serveur, en particulier FGstart, FGstop et FGlog
 
 ```bash
 su - steam
